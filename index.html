@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>The To-Do list!</title>
+  <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--FireBase SDK's-->
+</head>
+<body background="bg.jpg">
+    <center>
+    <h1 id="title_text">To-Do List🖉</h1>
+    <div id="app">
+        <div id="dtshower"><label id="date-time">Not working bozo L</label></div>
+      <input type="text" id="to-doinput" placeholder="Enter a new task"><br>
+      <button id="green_button" onclick="save_task()">Add Task</button>
+      <button id="red_button" onclick="clear_tasks()">Clear Tasks</button><br>
+      <label id="lil-label">Tasks:</label>
+      <ul id="task_list"></ul>
+    </div>
+</center>
+<script src="main.js"></script>
+</body>
+</html>
